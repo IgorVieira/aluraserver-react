@@ -18,7 +18,7 @@ module.exports = (app) =>{
 
         Authhor.findById(_id).exec()
         .then(author=>{
-            if(!author) throw new Error("Autor is not found")
+            if(!author) throw new Error("Author is not found")
             res.json(autor)
         })
         .catch(erro => res.status(404).json(erro))

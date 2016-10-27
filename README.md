@@ -43,7 +43,7 @@
 
  ```
 
- - E por fim, rode o npm para inicializar!
+ - E por fim, em outro TERMINAL, rode o npm para inicializar e seja feliz estudando react =]
 
  ```
   npm start

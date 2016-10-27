@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 
 module.exports = () =>{
 
-    let autor = mongoose.Schema({
+    let author = mongoose.Schema({
         nome:{
             type:String,
             required:true,
@@ -21,7 +21,7 @@ module.exports = () =>{
     })
 
 
-    return mongoose.model('Autor', autor)
+    return mongoose.model('Author', author)
 
     
 }

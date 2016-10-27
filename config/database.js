@@ -10,13 +10,13 @@ module.exports = function(uri){
 	});
 
 
-	// mongoose.connection.on('disconnect', function(){
-	// 	console.log('Mongoose! Desconectado em:'+ uri);
-	// });
+	mongoose.connection.on('disconnect', function(){
+		console.log('Mongoose! Desconectado em:'+ uri);
+	});
 
-	// mongoose.connection.on('error', function(erro){
-	// 	console.log('Mongoose!Erro na conexão'+ erro);
-	// });
+	mongoose.connection.on('error', function(erro){
+		console.log('Mongoose!Erro na conexão'+ erro);
+	});
 
 	process.on('SIGINT', function(){
 		mongoose.connection.close(function(){

@@ -17,6 +17,13 @@ module.exports = () =>{
             index:{
                 unique:true
             }
+        },
+        senha:{
+            type:String,
+            required:true,
+            index:{
+                unique:true
+            }
         }
     })
 

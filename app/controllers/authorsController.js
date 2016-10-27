@@ -26,11 +26,12 @@ module.exports = (app) =>{
 
     controller.saveAuthors = (req,res) =>{
         
-        let _id = req.params.id
+        let _id = req.body.id
 
         var data = {
-            "nome":req.params.nome,
-            "email":req.params.email
+            "nome":req.body.nome,
+            "email":req.body.email,
+            "senha":req.body.senha
         }
 
         if(_id){

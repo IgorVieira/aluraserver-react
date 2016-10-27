@@ -4,8 +4,6 @@ module.exports = (app) =>{
    
     app.route('/api/autores')
         .get(controller.listAuthors)
-       
-    app.route('/api/autores/:nome/:email')
         .post(controller.saveAuthors)      
     app.route('/api/autores/:id')
         .get(controller.getAuthorForId) 

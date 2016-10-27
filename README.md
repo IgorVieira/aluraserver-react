@@ -38,7 +38,7 @@
 
  ```
   use books //nome do database em questão
-  db.authors.insert({"nome":"João","email":"joao@email.com"}) //para inserir um autor
+  db.authors.insert({"nome":"João","email":"joao@email.com","senha":"1234"}) //para inserir um autor
   db.authors.find() //para listar todos os autores
 
  ```
